@@ -17,6 +17,7 @@ app.get("/sum/:number1/:number2", (request, response) => {
   let number2 = parseInt(request.params.number2);
   let sum = number1 + number2;
   response.send(`${sum}`);
+  // response.json(parseInt(request.params.number1) + parseInt(request.params.number2));
 });
 
 app.get("/substraction/:number1/:number2", (request, response) => {
